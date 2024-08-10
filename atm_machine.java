@@ -4,10 +4,6 @@
  */
 package project;
 import java.util.*;
-/**
- *
- * @author Welcome
- */
 class atm
 {
     private int pin;
@@ -30,17 +26,12 @@ class atm
             System.out.println("     NOTE     ");
             System.out.println("Please enter the valid PIN");
             again();
-            
         }
     }
     private void again()
     {
         pincheck();
     }
-  
-       
-       
-    
     public void list()
     {
        System.out.println("1.Account balance amount");
@@ -50,7 +41,6 @@ class atm
        Scanner sc = new Scanner (System.in);
        System.out.println("Press option from(1 to 4) as you like");
        int a= sc.nextInt();
-       
        switch(a)
        {
            case 1:
@@ -77,8 +67,7 @@ class atm
                System.out.println("Enter the valid option");
                list();
                break;
-           }
-               
+           }      
        }
     }
     public void accountbalance()
@@ -112,8 +101,7 @@ class atm
         if(b==1)
         {
             list();
-        }
-                
+        }          
     }
     public void deposit()
     {
@@ -128,24 +116,13 @@ class atm
         {
             list();
         }
-    }
-    
-    
+    }  
 }
-
 public class atm_machine 
 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         System.out.println("     WELCOME     ");
         atm machine= new atm();
         machine.pincheck();
-        
     }
 }
-
-
-
