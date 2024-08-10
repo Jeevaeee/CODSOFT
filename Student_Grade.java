@@ -11,10 +11,6 @@ public class Student_grade
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int total_mark=0;
-		//String sub=null;
-		//String[] arrstr=;
-		//int arr_size=0;
-	    
 		System.out.println("How many Subject due you want to enter:");
 		int total_sub=sc.nextInt();
 		String [] arr =new String[total_sub];
@@ -32,7 +28,7 @@ public class Student_grade
 		        System.out.println("Please enter the mark from 1 to 100");
 		        break;
 		    }
-		    
+		    //I use this print statement to check its correctly get or not
 		    //System.out.println(arr[i]+" - "+arr1[i]);
 		    total_mark+=arr1[i];
 		    if(i==total_sub-1)
